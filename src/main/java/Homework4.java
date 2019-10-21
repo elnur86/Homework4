@@ -12,5 +12,15 @@ public class Homework4 {
         Human mather2= new Human("Laura", "Lyn",1963);
         Human child2=new Human("Mark","Lyn",1988,100,p2,mather2,father2);
 
+        System.out.println(child1);
+        System.out.println(child2);
+        System.out.println(p1);
+        System.out.println(p2);
+        p1.eat();
+        p2.foul();
+        p1.respond();
+        child1.describePet();
+        child2.greetPet();
+
     }
 }

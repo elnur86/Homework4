@@ -39,7 +39,7 @@ public class Human {
     }
     void greetPet()
     {
-        System.out.printf("Hello, %s ",pet.nickname);
+        System.out.printf("Hello, %s \n",pet.nickname);
     }
 
     void describePet()

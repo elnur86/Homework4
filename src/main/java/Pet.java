@@ -27,7 +27,7 @@ public class Pet {
     }
     void respond()
     {
-        System.out.printf("Hello, owner. I am - %s. I miss you!",this.nickname);
+        System.out.printf("Hello, owner. I am - %s. I miss you!\n",this.nickname);
     }
     void foul()
     {
