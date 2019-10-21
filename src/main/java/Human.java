@@ -36,5 +36,15 @@ public class Human {
     {
         System.out.printf("I have a %s, he is %d years old, he is [very sly]>50/[almost not sly]<50",pet.species,pet.age);
     }
+    /*
+    void toString()
+    {
+        System.out.printf("Human{name=%s, surname=%s, year=%d, iq=%d, mother=%s, father=%s, pet=%s{nickname=%s, age=%d, trickLevel=%d, habits=[eat, drink, sleep]",this.name, this.surname,this.year, this.iq,this.mother.name, this.father.name, this.pet, this.pet.nickname,this.pet.age, this,pet.trickLevel);
+    }*/
+
+    @Override
+    public String toString() {
+        return String.format("Human{name="+name+" surname=" +surname+", year="+year+", iq=" +iq+ ", mother=" +mother.name +", father=" + father.name+ ", pet=" +pet.species+"{nickname=" +pet.nickname +", age=" +pet.age+ ", trickLevel=" +pet.trickLevel+", habits=[eat, drink, sleep]");
+    }
 }
 

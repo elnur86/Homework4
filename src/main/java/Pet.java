@@ -25,6 +25,11 @@ public class Pet {
     {
         System.out.println("I need to cover it up");
     }
+    @Override
+    public String toString() {
+        return String.format(species + "{nickname=" + nickname +", age="+age+", tricklevel=" +trickLevel+", habits");
+    }
+
 }
 
 
