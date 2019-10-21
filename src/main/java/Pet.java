@@ -5,6 +5,14 @@ public class Pet {
     int trickLevel;
     //String[] habits;
 
+    Pet()
+    {}
+
+    Pet (String species, String nickname)
+    {
+        this.species=species;
+        this.nickname=nickname;
+    }
     Pet (String species, String nickname, int age, int trickLevel)
     {
         this.species=species;

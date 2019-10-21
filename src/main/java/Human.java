@@ -8,13 +8,23 @@ public class Human {
     Human mother;
     Human father;
 
+    Human ()
+    {}
+
     Human (String name, String surname, int year)
     {
         this.name=name;
         this.surname=surname;
         this.year=year;
     }
-
+    Human (String name, String surname, int year, Human mother, Human father)
+    {
+        this.name=name;
+        this.surname=surname;
+        this.year=year;
+        this.mother=mother;
+        this.father=father;
+    }
 
     Human (String name, String surname, int year, int iq, Pet pet, Human mother, Human father)
     {
@@ -36,11 +46,6 @@ public class Human {
     {
         System.out.printf("I have a %s, he is %d years old, he is [very sly]>50/[almost not sly]<50",pet.species,pet.age);
     }
-    /*
-    void toString()
-    {
-        System.out.printf("Human{name=%s, surname=%s, year=%d, iq=%d, mother=%s, father=%s, pet=%s{nickname=%s, age=%d, trickLevel=%d, habits=[eat, drink, sleep]",this.name, this.surname,this.year, this.iq,this.mother.name, this.father.name, this.pet, this.pet.nickname,this.pet.age, this,pet.trickLevel);
-    }*/
 
     @Override
     public String toString() {
